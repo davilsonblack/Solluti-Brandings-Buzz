@@ -1,0 +1,67 @@
+
+.contato{
+        background-color: $background;
+    
+        .contato-linha{
+        display: flex;
+
+        @media(max-width: 1230px){
+            flex-direction: column;
+            form{
+                width: 100%;
+            }
+        }
+        
+
+        picture{
+            @include alinhar-ver-hor;
+        .contato-imagem{
+            width: 630px;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.10);
+            border-radius: 10px;
+            padding: 40px;
+            
+            &:hover{
+                transition: 0.5s;
+                transform: scale(1.05);
+                background-color: white;
+            }
+        }}
+        form{
+            @include alinhar-ver-hor;
+
+            p{
+                margin-bottom: 0;
+            }
+            input{
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: 2px solid $gray;
+                outline: none;
+                width: 100%;
+            }
+            .contato-mensagem{
+                max-width: 500px;
+                margin: 100px 0;
+            }
+            #contato-mensagem{
+                height: 100px;
+            }
+            button{
+                margin: 20px 0;
+                width: auto;
+                border-radius: 5px;
+                background-color: $secondary;
+                color: white;
+                padding: 5px;
+                width: 100%;
+                border: none;
+
+                &:hover{
+                    transition: 0.5s;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
