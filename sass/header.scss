@@ -1,0 +1,60 @@
+header{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    border: 1px solid $gray;
+    nav{
+        padding: 0;
+        .header-container-principal{
+            .navbar-toggler{
+                box-shadow: none;
+            }
+            padding: 0px;
+            .imagem-logo{
+                img{
+                    padding: 15px 20px;
+                    border-right: 1px solid $gray;
+                }
+            }
+            .menu{
+                display: flex;
+                justify-content: space-around;
+                ul{
+                    li{
+                        ul{
+                            li{
+                                .header-menu-drop-title{
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        
+                        &:hover{
+                            color: $primary;
+                        }
+                        padding: 0 10px;
+                        a{
+                            &:hover{
+                                color: $primary !important;
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+        .header-icones{
+            padding: 10px 25px;
+            width: 150px;
+            justify-content: space-between;
+            border-left: 1px solid $gray;
+            height: 100%;
+            a{
+                i{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
